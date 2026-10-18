@@ -536,7 +536,10 @@ class MainWindow(QMainWindow):
 
         container = QWidget()
         container.setLayout(root)
-        container.setStyleSheet("background:#F8FAFC;")
+        # 背景色只套在這個容器本身：不加選擇器的話會一路傳給所有子按鈕，
+        # 蓋掉 QPushButton:checked 的藍底（選中的按鈕會變成白底白字、看不到）
+        container.setObjectName("root")
+        container.setStyleSheet("QWidget#root { background:#F8FAFC; }")
 
         # 包進可捲動區：多了容器後版面較高，小螢幕也不會被裁切
         scroll = QScrollArea()
