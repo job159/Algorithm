@@ -35,7 +35,7 @@
 
 需求： pip install numpy（--plot 另需 matplotlib）
 執行： python kalman_2d.py
-動畫： python kalman_pyqt6_step.py（同資料夾，PyQt6 逐步解說版）
+互動課： python kalman_lessons_pyqt6.py（同資料夾，六堂課，先直覺後公式；第 5 章就是用這支函式庫）
 """
 
 from __future__ import annotations

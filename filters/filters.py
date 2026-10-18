@@ -29,7 +29,7 @@
 需求 / 執行：
   pip install numpy          （scipy 可選，只用在自我測試裡比對 Biquad）
   python filters.py          → 跑自我測試：印出 RMSE / 延遲表，並做 assert 合理性檢查
-  搭配動畫：python filters_pyqt6_step.py
+  搭配互動課：python filter_lessons_pyqt6.py（六堂課，一章一種雜訊）
 """
 
 from __future__ import annotations
